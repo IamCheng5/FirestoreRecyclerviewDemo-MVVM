@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FirestoreRecyclerViewDemo-MVVM</string>
+    <string name="button_create">Create</string>
+    <string name="empty_not_saved">Word not saved because it is empty.</string>
+    <string name="post_added">Post %1$s is added.</string>
+    <string name="post_not_added">Post %1$s not added.</string>
+    <string name="post_removed">Post %1$s is removed.</string>
+    <string name="post_not_removed">Post %1$s not removed.</string>
+    <string name="add_word">Add word</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_content">Content</string>
+
+</resources>
