@@ -75,8 +75,6 @@ class PostRepository {
 
         })
     }
-    fun getPosts(): LiveData<List<Post>>{
-        return list
-    }
+    fun getPosts(): LiveData<List<Post>> = list
 
 }
