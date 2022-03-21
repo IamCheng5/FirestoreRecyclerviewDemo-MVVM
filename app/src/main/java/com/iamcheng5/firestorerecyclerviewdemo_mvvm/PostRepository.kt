@@ -43,10 +43,11 @@ class PostRepository {
                 cont.resume(Result.Success(task.isSuccessful))
             }
     }
+
     //listen for realtime updates
-    fun getPosts(): LiveData<List<Post>>{
-        val list = MutableLiveData<List<Post>>()
-        val posts = mutableListOf<Post>()
+    private val list = MutableLiveData<List<Post>>()
+    private val posts = mutableListOf<Post>()
+    init{
         db.collection("posts").addSnapshotListener(object : EventListener<QuerySnapshot> {
             override fun onEvent(value: QuerySnapshot?, error: FirebaseFirestoreException?) {
                 if (error != null) {
@@ -73,6 +74,8 @@ class PostRepository {
             }
 
         })
+    }
+    fun getPosts(): LiveData<List<Post>>{
         return list
     }
 
