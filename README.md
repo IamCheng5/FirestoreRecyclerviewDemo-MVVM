@@ -1,2 +1,2 @@
 # FirestoreRecyclerviewDemo-MVVM
-Firestore recyclerview mvvm的demo 沒有pagination 
+Firestore+recyclerview+mvvm Demo No pagination 
